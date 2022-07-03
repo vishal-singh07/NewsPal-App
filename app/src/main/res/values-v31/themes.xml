@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/red</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">3000</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/brand</item>
+        <item name="postSplashScreenTheme">@style/Theme.NewsPal</item>
+    </style>
+</resources>

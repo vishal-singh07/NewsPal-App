@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FullNewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullNewsImage"
+            android:src="@drawable/ic_launcher_background"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullNewsTitle"
+            android:textSize="20sp"
+            android:layout_below="@+id/fullNewsImage"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullNewsDescription"
+            android:layout_below="@+id/fullNewsTitle"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_bookmark_border_24"
+                android:layout_weight="1"
+                android:background="@drawable/flag_transparent"
+                android:id="@+id/saveBtn"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go to site"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:id="@+id/fullNewsBtn"
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_share_24"
+                android:layout_weight="1"
+                android:background="@drawable/flag_transparent"
+                android:id="@+id/shareBtn"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</FrameLayout>
