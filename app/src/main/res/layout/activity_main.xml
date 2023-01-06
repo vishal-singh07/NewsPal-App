@@ -15,22 +15,22 @@
 
         <include layout="@layout/app_bar_main" />
 
-<!--        <FrameLayout-->
-<!--            android:id="@+id/container"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_below="@+id/app_bar"-->
-<!--            android:layout_marginBottom="?attr/actionBarSize" />-->
+        <!--        <FrameLayout-->
+        <!--            android:id="@+id/container"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_below="@+id/app_bar"-->
+        <!--            android:layout_marginBottom="?attr/actionBarSize" />-->
 
-            <androidx.fragment.app.FragmentContainerView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/app_bar"
-                android:id="@+id/nav_host_fragment"
-                android:name="androidx.navigation.fragment.NavHostFragment"
-                app:navGraph = "@navigation/main_nav_graph"
-                app:defaultNavHost = "true"
-                android:layout_marginBottom="?attr/actionBarSize"/>
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph = "@navigation/main_nav_graph"
+            app:defaultNavHost = "true"
+            android:layout_marginBottom="?attr/actionBarSize"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"

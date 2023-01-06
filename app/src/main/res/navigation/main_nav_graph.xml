@@ -24,7 +24,7 @@
         tools:layout="@layout/fragment_full_news">
         <argument
             android:name="selectedNews"
-            app:argType="com.example.newspal.model.Article"
+            app:argType="com.example.newspal.data.Article"
             />
         <action
             android:id="@+id/action_fullNewsFragment_to_webViewFragment"
@@ -121,7 +121,7 @@
         tools:layout="@layout/fragment_web_view">
         <argument
             android:name="newsURL"
-            app:argType="string" />
+            app:argType="string"/>
     </fragment>
     <fragment
         android:id="@+id/savedFragment"
@@ -136,7 +136,7 @@
         android:name="com.example.newspal.fragments.SavedFullNewsFragment">
         <argument
             android:name="selectedNews"
-            app:argType="com.example.newspal.model.Article" />
+            app:argType="com.example.newspal.data.Article" />
         <action
             android:id="@+id/action_savedFullNewsFragment_to_webViewFragment"
             app:destination="@id/webViewFragment" />

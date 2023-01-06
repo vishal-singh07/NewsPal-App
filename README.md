@@ -21,7 +21,7 @@
 The following **libraries** are used in the app:
 
 * [x] Retrofit : For working with news API.
-* [x] Glide : For loading images.
+* [x] Coil : For loading images.
 * [x] Gson : For serialization and deserialization .
 * [x] Room : For storing articles to read them offline .
 

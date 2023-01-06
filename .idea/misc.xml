@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/background_splash.xml" value="0.124" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/ic_baseline_bookmark_border_24.xml" value="0.126" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.1" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/ic_baseline_save_24.xml" value="0.126" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/image_shadow.xml" value="0.126" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/drawable/splash_anim.xml" value="0.124" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/app_bar_main.xml" value="0.13333333333333333" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/drawer_layout.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_entertainment.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_full_news.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_home.xml" value="0.16259057971014493" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_saved.xml" value="0.165625" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_saved_full_news.xml" value="0.1" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_settings.xml" value="0.18872549019607843" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_sports.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/fragment_web_view.xml" value="0.1" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/image_shadow.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/movie_item_rv.xml" value="0.1811764705882353" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/nav_drawer_header.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/news_item_rv.xml" value="0.1" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/layout/saved_news_item.xml" value="0.17864583333333334" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/menu/drawer_categories_menu.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/menu/nav_items.xml" value="0.1796875" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
-        <entry key="..\:/Users/vishsingh/AndroidStudioProjects/NewsPal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
-      </map>
-    </option>
-  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
