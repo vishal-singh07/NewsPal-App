@@ -2,17 +2,20 @@ package com.example.newspal.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newspal.data.Article
-import com.example.newspal.databinding.NewsItemRvBinding
 import com.example.newspal.databinding.SavedNewsItemBinding
 
 class SavedNewsAdapter(private val onItemClicked: (Article) -> Unit) : RecyclerView.Adapter<SavedNewsAdapter.NewsViewHolder>() {
 
     var articles = mutableListOf<Article>()
-    fun setNewsList(movies: List<Article>) {
-        this.articles = movies.toMutableList()
-        notifyDataSetChanged()
+    fun setNewsList(newArticleList: List<Article>) {
+        val diffCallback = NewsDiffCallback(articles, newArticleList)
+        val diffResult = DiffUtil.calculateDiff(diffCallback)
+        articles.clear()
+        articles.addAll(newArticleList)
+        diffResult.dispatchUpdatesTo(this)
     }
 
     class NewsViewHolder(private var binding: SavedNewsItemBinding) :

@@ -3,7 +3,6 @@ package com.example.newspal
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.core.splashscreen.SplashScreen
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -30,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        val splashScreen = SplashScreen
         this.installSplashScreen()
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -51,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         //Set up bottom navigation
         bottomNav = binding.bottomNav
         NavigationUI.setupWithNavController(bottomNav,navController)
-
     }
 
     override fun onBackPressed() {

@@ -11,16 +11,15 @@ import java.io.IOException
 
 private const val COUNTRY_PREFERENCES = "country_preference"
 
-// Create a DataStore instance using the preferencesDataStore delegate, with the Context as
-// receiver.
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(
     name = COUNTRY_PREFERENCES
 )
 
-class SettingsDataStore(preference_datastore: DataStore<Preferences>) {
+class SettingsDataStore(context: Context) {
+    private val appContext = context.applicationContext
     private val SELECTED_COUNTRY = stringPreferencesKey("country")
 
-    val preferenceFlow: Flow<String> = preference_datastore.data
+    val selectedCountryFlow: Flow<String> =appContext.dataStore.data
         .catch {
             if (it is IOException) {
                 it.printStackTrace()
@@ -34,8 +33,8 @@ class SettingsDataStore(preference_datastore: DataStore<Preferences>) {
             preferences[SELECTED_COUNTRY] ?: "in"
         }
 
-    suspend fun saveCountryToPreferencesStore(countryCode: String, context: Context) {
-        context.dataStore.edit { preferences ->
+    suspend fun saveCountryToPreferencesStore(countryCode: String) {
+        appContext.dataStore.edit { preferences ->
             preferences[SELECTED_COUNTRY] = countryCode
         }
 

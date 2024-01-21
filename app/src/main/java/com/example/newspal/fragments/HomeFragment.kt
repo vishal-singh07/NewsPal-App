@@ -3,7 +3,6 @@ package com.example.newspal.fragments
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,15 +32,10 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var adapter: NewsAdapter
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater,container,false)
         return binding.root
@@ -58,7 +52,7 @@ class HomeFragment : Fragment() {
         binding.refreshlayout.setOnRefreshListener {
             getTopHeadlines()
             binding.refreshlayout.isRefreshing = false
-            Toast.makeText(activity,"Updated!", Toast.LENGTH_SHORT)
+            Toast.makeText(activity,"Updated!", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -66,7 +60,7 @@ class HomeFragment : Fragment() {
         getStatus()
         val preferences: SharedPreferences = this.requireContext().getSharedPreferences("My_Shared_Pref", Context.MODE_PRIVATE)
         val country = preferences.getString("country", "in")
-        viewModel.getAllArticles(category = "general",country!!, this.requireContext().getString(R.string.api_key)).observe(this.viewLifecycleOwner) { articles ->
+        viewModel.getAllArticles(category = "general",country!!).observe(this.viewLifecycleOwner) { articles ->
             articles.let {
                 adapter.setNewsList(articles)
             }

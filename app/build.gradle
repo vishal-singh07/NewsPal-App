@@ -9,15 +9,15 @@ plugins {
 
 android {
     namespace 'com.example.newspal'
-    compileSdk 32
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.newspal"
-        minSdk 21
-        targetSdk 32
+        minSdk 30
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-
+        buildConfigField("String","API_KEY", MY_KEY)
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
